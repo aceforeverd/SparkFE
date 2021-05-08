@@ -32,8 +32,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com._4paradigm.hybridse.sdk.DDLEngine.genDDL;
-import static com._4paradigm.hybridse.sdk.DDLEngine.sql2Feconfig;
+import com._4paradigm.hybridsql.sparkfe.utils.DDLEngine;
+import static com._4paradigm.hybridsql.sparkfe.utils.DDLEngine.sql2Feconfig;
+import static com._4paradigm.hybridsql.sparkfe.utils.DDLEngine.genDDL;
 
 
 public class DDLEngineTest {

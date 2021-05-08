@@ -130,7 +130,6 @@ class SparkFeSession {
     if (!sql.trim.endsWith(";")) {
       sql = sql.trim + ";"
     }
-
     val planner = new SparkPlanner(getSparkSession, config)
     this.planner = planner
     val df = planner.plan(sql, registeredTables.toMap).getDf()
